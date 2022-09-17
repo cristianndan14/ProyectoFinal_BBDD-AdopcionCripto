@@ -1,0 +1,16 @@
+id_comercio_servicio;nombre;rubro;descripcion;id_pais;id_criptomoneda;id_wallet
+1;Los pollos hermanos;FastFood;Cadena de comida rápida;1;1;2
+2;Monks media;Publicidad;Agencia de diseño marketing;1;3;1
+3;Gaming city;Tecnologia;Ventas de hardware;1;3;1
+4;Tesla;Automotores;Venta de vehiculos electricos;2;1;3
+5;Compound Labs;Trading;Asesorias financieras;5;1;4
+6;Quartz;Videojuegos;Agencia de videojuegos;3;1;5
+7;Amazon;Marketplace;Empresa marketplace;2;1;3
+8;Subway;FastFood;Cadena de comida rápida;2;4;5
+9;Intel;Tecnologia;Ventas de hardware;2;1;12
+10;Shopify;Marketplace;Empresa marketplace;13;3;3
+11;Starbucks;Cafeteria;Cadena de cafeterias;2;1;11
+12;Microsoft;Tecnologia;Ventas de software;2;1;2
+13;Norwegian;Aerolineas;Empresa de aerolinea;11;6;1
+14;Booking;Turismo;Empresa de turismo;6;1;7
+15;Destinia;Turismo;Empresa de turismo;12;6;13

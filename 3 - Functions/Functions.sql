@@ -1,0 +1,39 @@
+USE cripto ;
+
+
+DROP FUNCTION IF EXISTS fn_contar_usuarios_por_pais ;
+DELIMITER //
+CREATE FUNCTION fn_contar_usuarios_por_pais( pais VARCHAR(20) )
+RETURNS INT UNSIGNED
+DETERMINISTIC
+BEGIN
+DECLARE total INT UNSIGNED; 
+SET total = 
+(SELECT COUNT(u.id_pais) FROM usuarios as u 
+join paises as p 
+on u.id_pais = p.id_pais 
+WHERE p.nombre = pais ) ;
+RETURN total ;
+END
+//
+DELIMITER ;
+
+SELECT fn_contar_usuarios_por_pais('ARGENTINA') ;
+
+
+
+drop function if exists FN_TOTAL_LETRAS ;
+DELIMITER //
+CREATE FUNCTION FN_TOTAL_LETRAS ( LETRA CHAR )
+RETURNS INT
+DETERMINISTIC
+BEGIN
+DECLARE NUMERO INT;
+SELECT COUNT(*) INTO NUMERO FROM USUARIOS 
+WHERE PROFESION LIKE CONCAT('%', LETRA , '%');
+RETURN NUMERO;
+END
+//
+DELIMITER ;
+
+SELECT FN_TOTAL_LETRAS('D') ;
