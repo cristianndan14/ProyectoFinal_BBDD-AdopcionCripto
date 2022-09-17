@@ -3,6 +3,7 @@
 ********ORDEN DE EJECUCIÓN DE SCRIPTS**********
 
 0- Creacion de esquema y tablas
+´´´´
 1- Data insertion. Importar .csv a cada tabla correspondiente siguiente este orden:
 	- paises.csv
 	- criptomonedas.csv
